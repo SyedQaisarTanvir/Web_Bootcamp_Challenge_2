@@ -126,6 +126,7 @@ p {
   padding: 1.2rem;
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -136,5 +137,52 @@ p {
   .hero {
     margin-top: 2rem;
     width: 38rem;
+  }
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.location-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first img,
+.second img,
+.third img {
+  height: 20rem;
+  width: 40rem;
+  margin: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: black;
+  padding-left: 7rem;
+}
+.colorful-text {
+  color: aqua;
+}
+
+.section h1 {
+  color: darkgray;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .location-section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .first img,
+  .second img,
+  .third img {
+    width: 35rem;
   }
 }
