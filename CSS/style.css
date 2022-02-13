@@ -35,3 +35,10 @@ p {
     font-size: 1.7rem;
   }
 }
+
+.header {
+  margin: 0;
+  height: 80rem;
+  width: 100vw;
+  background-image: url("../Image/header_image.jpg");
+}
