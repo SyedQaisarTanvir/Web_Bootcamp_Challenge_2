@@ -41,4 +41,54 @@ p {
   height: 80rem;
   width: 100vw;
   background-image: url("../Image/header_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-navigation {
+  align-self: flex-start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: yellow;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.right-navigation ul {
+  list-style-type: none;
+}
+
+.right-navigation ul li {
+  margin: 1.3rem;
+}
+
+.right-navigation ul li a {
+  color: yellow;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .left-navigation {
+    margin-left: 5rem;
+    flex: 1;
+  }
+
+  .right-navigation {
+    margin-right: 5rem;
+  }
+  .right-navigation ul li {
+    display: inline;
+  }
 }
