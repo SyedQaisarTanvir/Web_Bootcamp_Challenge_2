@@ -38,7 +38,7 @@ p {
 
 .header {
   margin: 0;
-  height: 80rem;
+  height: 70rem;
   width: 100vw;
   background-image: url("../Image/header_image.jpg");
   background-repeat: no-repeat;
@@ -90,5 +90,51 @@ p {
   }
   .right-navigation ul li {
     display: inline;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 27rem;
+  width: 35rem;
+  background-color: gray;
+  opacity: 0.7;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+.hero h2,
+p {
+  color: white;
+}
+
+.hero p {
+  padding-left: 1.2rem;
+}
+
+.hero button {
+  border: none;
+  outline: 0;
+  height: 5rem;
+  width: 15rem;
+  background-color: yellow;
+  color: green;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 50rem;
+  }
+
+  .hero {
+    margin-top: 2rem;
+    width: 38rem;
   }
 }
