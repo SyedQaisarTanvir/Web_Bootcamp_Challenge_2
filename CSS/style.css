@@ -186,3 +186,16 @@ p {
     width: 35rem;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 100vw;
+  background-color: darkslategrey;
+}
+
+.footer p {
+  color: white;
+}
