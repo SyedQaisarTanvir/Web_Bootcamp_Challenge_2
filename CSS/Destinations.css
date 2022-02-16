@@ -41,10 +41,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 30rem;
+  height: 27rem;
   width: 100vw;
-  color: aqua;
 }
 
 .left-navigation {
@@ -53,12 +51,17 @@ p {
   cursor: pointer;
 }
 
+.left-navigation > h2 > a {
+  color: aqua;
+  text-decoration: none;
+}
+
 .right-navigation ul {
   list-style-type: none;
 }
 
 .right-navigation ul li {
-  margin: 1.3rem;
+  margin: 1.7rem;
 }
 
 .right-navigation ul li a {
@@ -102,5 +105,51 @@ p {
   }
   .right-navigation ul li {
     display: inline;
+  }
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.sub-container {
+  height: 20rem;
+  width: 50rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.image img {
+  height: 20rem;
+  width: 20rem;
+  margin-right: 3rem;
+}
+
+.sub-container-text p {
+  font-size: 1.6rem;
+}
+
+.sub-container-text h2 {
+  font-size: 2rem;
+}
+
+.sub-container-text a {
+  margin-left: 15rem;
+  font-size: 1.3rem;
+  transition: color 0.5s;
+}
+
+.sub-container-text a:hover {
+  color: aqua;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 9rem;
   }
 }

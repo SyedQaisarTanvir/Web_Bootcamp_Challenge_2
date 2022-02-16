@@ -74,6 +74,22 @@ p {
   font-weight: bold;
 }
 
+.right-navigation ul li a:hover {
+  color: yellowgreen;
+}
+
+.colorful-background {
+  transition: background-color 0.5s;
+}
+
+.colorful-background a:hover {
+  height: 7rem;
+  width: 15rem;
+  background-color: yellow;
+  color: gray;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   .navigation {
     flex-direction: row;
