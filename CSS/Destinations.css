@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #262626;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+        TODO: Typography
+
+*/
+
+h2 {
+  font-size: 3.14rem;
+}
+
+p {
+  font-size: 2.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 30rem;
+  width: 100vw;
+  color: aqua;
+}
+
+.left-navigation {
+  align-self: flex-start;
+  padding: 3rem;
+  cursor: pointer;
+}
+
+.right-navigation ul {
+  list-style-type: none;
+}
+
+.right-navigation ul li {
+  margin: 1.3rem;
+}
+
+.right-navigation ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+.right-navigation ul li a:hover {
+  color: yellowgreen;
+}
+
+.colorful-background {
+  transition: background-color 0.5s;
+}
+
+.colorful-background a:hover {
+  height: 7rem;
+  width: 15rem;
+  background-color: yellow;
+  color: gray;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 10rem;
+  }
+  .left-navigation {
+    flex: 1;
+    padding-left: 5rem;
+  }
+  .left-navigation h2 {
+    margin-top: 1rem;
+  }
+  .right-navigation {
+    margin-right: 6rem;
+  }
+  .right-navigation ul li {
+    display: inline;
+  }
+}
